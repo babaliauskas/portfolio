@@ -5,7 +5,7 @@ const PORT = 3000;
 
 const nodemailer = require('nodemailer');
 
-
+app.use(express.static(__dirname + '/build'))
 app.use(bodyParser.json());
 
 app.use(function(req, res, next) {
