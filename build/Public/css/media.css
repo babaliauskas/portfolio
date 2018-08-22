@@ -6,6 +6,7 @@
 ****************************************************************************/
 @media(max-width: 1200px) {
     .portfolio img { width: 500px }
+    .skills img { width: 100px }
 }
 @media(max-width: 1024px){
     .portfolio img { width: 400px }

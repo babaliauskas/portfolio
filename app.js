@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+require('dotenv').config();
 const PORT = 4000;
 
 const nodemailer = require('nodemailer');
 
-app.use(express.static(__dirname + '/build'))
 app.use(bodyParser.json());
+app.use(express.static(__dirname + '/build'))
 
 app.use(function(req, res, next) {
    res.header("Access-Control-Allow-Origin", "*");
@@ -34,28 +35,27 @@ app.post('/api/send', (req, res) => {
         secure: false,
         auth: {
             user: process.env.EMAIL,
-            pass: `${process.env.PSW}`
+            pass: process.env.PSW
         },
         tls: {
             rejectUnauthorized: false
         }
     })
-
     let mailOptions = {
-        from: `"${req.body.name}" <lukas.devmountain@gmail.com>`,
-        to: `lukas.devmountain@gmail.com`,
-        subject: 'New Message',
-        text: output,
+        from: process.env.EMAIL,
+        to: process.env.EMAIL,
+        subject: 'Message from babaliauskasprojects.com',
+        text: output
     };
-
-   transporter.sendMail(mailOptions, function (error, info) {
-       if (error) {
-           console.log(error);
-       } else {
-           console.log('Email sent: ' + info.response);
-           res.sendStatus(200);
-       }
-   });
+ 
+    transporter.sendMail(mailOptions, function (error, info) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Email sent: ' + info.response);
+            res.sendStatus(200);
+        }
+    });
 
 })
 
