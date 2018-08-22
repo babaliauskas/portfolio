@@ -7,7 +7,7 @@ $(document).ready(function() {
         console.log(name)
         e.preventDefault();
         $.ajax({
-            url: 'http://localhost:4000/api/send',
+            url: 'http://localhost:4005/api/send',
             contentType: 'application/json',
             type: 'POST',
             data: JSON.stringify({
@@ -89,11 +89,11 @@ setTimeout(function(){
 }, 2000)
 
 
-    $('#something').click(function() {
-        setTimeout(function() {
-        location.reload();
-    }, 2000)
-})
+//     $('#something').click(function() {
+//         setTimeout(function() {
+//         location.reload();
+//     }, 2000)
+// })
 
 $('.js--nav-icon').click(function() {
     var nav = $('.js--main-nav');
