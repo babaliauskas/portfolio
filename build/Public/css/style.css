@@ -305,12 +305,15 @@ body {
     background-color: #091330;
 }
 
-.skills img { width: 80px }
+.skills img { 
+    width: 90px;
+    height: 80px;
+ }
 
 .skill-list {
     margin: auto;
     display: flex;
-    width: 40%;
+    width: 60%;
     justify-content: space-around;
     flex-wrap: wrap;
 }

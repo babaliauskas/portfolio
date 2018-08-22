@@ -118,6 +118,10 @@
                 <img src="./Public/img/auth0.png" alt="auth0">
                 <p>Auth0</p>
             </div>
+            <div class="skill-all">
+                <img src="./Public/img/git.png" alt="git">
+                <p>Auth0</p>
+            </div>
         </div>
     </section>
 
@@ -136,7 +140,7 @@
                 <textarea name="message" placeholder="Message" required></textarea>
             </div>
             <div class="contact-btn">
-                <button type="submit">Submit</button>
+                <button onclick='alertBtn()' type="submit" id='something'>Submit</button>
             </div>
         </form>
     </div>
@@ -155,8 +159,14 @@
 <script>
 
     function alertBtn(){
-        swal("", "Message has been sent", "success");
+        swal({
+            title: "Thank you!",
+            text: "Your email has been sent!",
+            icon: "success",
+            buttons: false
+        });
     }
+
 </script> 
 
 </body>

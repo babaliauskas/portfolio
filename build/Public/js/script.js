@@ -88,6 +88,13 @@ setTimeout(function(){
     $('.nav').css('transition', '3s')
 }, 2000)
 
+
+    $('#something').click(function() {
+        setTimeout(function() {
+        location.reload();
+    }, 2000)
+})
+
 $('.js--nav-icon').click(function() {
     var nav = $('.js--main-nav');
     nav.slideToggle(500);

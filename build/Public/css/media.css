@@ -89,7 +89,10 @@
         margin: 20px auto;
     }
     .portfolio-links a { margin-left: 0 }
-    .skill img { width: 80px }
+    .skill img { 
+        width: 80px;
+        height: auto;
+     }
 }
 
 
@@ -125,7 +128,7 @@
     }
     .portfolio-links a{ margin-left: 0 }
     .skill-list { width: 65% }
-    .skills img { width: 50px }
+    .skills img { width: 50px; height: auto; }
     .contact-name input,
     .contact-text textarea,
     .contact-btn button { width: 70% }
