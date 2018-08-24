@@ -383,13 +383,37 @@ body {
 
 footer {
     background-color: #292f33;
-    height: 100px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 0;
 }
 
-.rights { color: white }
+.rights { 
+    color: white;
+    text-align: center;
+    
+ }
+ .rights ion-icon {
+     margin: 0 10px 20px 10px;
+     font-size: 30px;
+     cursor: pointer;
+ }
+ .linkedin {
+     transition: 1s;
+ }
+ .github {
+     border-radius: 50%;
+     transition: 1s;
+ }
+ .linkedin:hover {
+    color: #0077b5;
+ }
+ .github:hover {
+     color: black;
+     background-color: #fff;
+ }
 
 
 
