@@ -393,7 +393,9 @@ footer {
 .rights { 
     color: white;
     text-align: center;
-    
+ }
+ .rights a {
+     color: white;
  }
  .rights ion-icon {
      margin: 0 10px 20px 10px;
