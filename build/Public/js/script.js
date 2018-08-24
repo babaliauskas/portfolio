@@ -7,7 +7,7 @@ $(document).ready(function() {
         console.log(name)
         e.preventDefault();
         $.ajax({
-            url: 'http://localhost:4005/api/send',
+            url: '/api/send',
             contentType: 'application/json',
             type: 'POST',
             data: JSON.stringify({
