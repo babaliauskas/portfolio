@@ -74,6 +74,11 @@ $(document).ready(function() {
 }, {
     offset: '70%'
 })
+$('.js--wp-6').waypoint(function(direction) {
+    $('.js--wp-6').addClass('animated fadeInUp')
+}, {
+    offset: '70%'
+})
 
 setTimeout(function() {
     $('body').css('opacity', '1')
