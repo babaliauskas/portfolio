@@ -244,6 +244,7 @@ body {
     width: 600px;
     height: 360px;
     overflow: hidden;
+    box-shadow: 3px 3px 10px black;
 }
 #slider .slides {
     display: block;
@@ -267,6 +268,7 @@ body {
     width: 600px;
     height: 360px;
     overflow: hidden;
+    box-shadow: 3px 3px 10px black;
 }
 #slider2 .slides2 {
     display: block;
