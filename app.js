@@ -20,13 +20,13 @@ app.post('/api/send', (req, res) => {
     console.log('tesssss: ')
    let {name, email, message} = req.body;
    const output = `
-    Job
+    Job 
     Contact Details
     
         Name: ${name}
         email: ${email}
     
-    Message
+    Message:
     ${message}
     `;
     let transporter = nodemailer.createTransport({
@@ -56,7 +56,6 @@ app.post('/api/send', (req, res) => {
             res.sendStatus(200);
         }
     });
-
 })
 
 

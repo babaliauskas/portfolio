@@ -5,18 +5,31 @@
 
 ****************************************************************************/
 @media(max-width: 1200px) {
-    .portfolio img { width: 500px }
+    .portfolio-img { width: 500px }
     .skills img { width: 100px }
+    #links2 {margin-top: 20px;}
 }
 @media(max-width: 1024px){
-    .portfolio img { width: 400px }
+    .portfolio-img { width: 400px }
     .skill-list { width: 70% }
     .skills img { width: 80px }
 }
 
 @media(max-width: 945px) {
     .nav ul { display: inline-flex}
-    .portfolio-img img { width: 100% }
+    .portfolio-img { 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+     }
+     #links2 a{ margin-top: 20px }
+     #slider .slides .slide img {
+         width: 100%;
+     }
+     #slider2 .slides2 .slide2 img {
+         width: 100%;
+     }
+
     .portfolio-personal {
         flex-wrap: wrap;
         text-align: center;
@@ -37,6 +50,7 @@
 
 
 @media(max-width: 768px) {
+    .img-phone { display: block}
 
     .header-about { top: 55% }
 
@@ -109,7 +123,13 @@
     }
     .header-info { font-size: 80% }
     .first { font-size: 150% }
-    .portfolio img { width: 100% }
+    .portfolio-img #slider { 
+        height: 180px; 
+     }
+     .portfolio-img #slider2 { 
+        height: 180px; 
+     }
+
     .portfolio-personal {
         flex-wrap: wrap;
         text-align: center;

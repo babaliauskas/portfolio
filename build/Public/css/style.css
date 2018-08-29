@@ -223,16 +223,12 @@ body {
     display: flex;
     text-align: left;
     padding: 20px;
+    box-shadow: 3px 3px 10px black;
 }
-
+.img-phone {display: none;}
 .portfolio-about { color: black }
 
-/* .portfolio-img img {
-    width: 600px;
-    height: auto;
-    box-shadow: 5px 5px 10px rgb(59, 59, 59);
-} */
-
+#links2 { margin-top: 50px;}
 .portfolio-img {
     display: flex;
     flex-direction: row;
@@ -344,6 +340,12 @@ body {
     color: white;
     margin-left: 20px;
     outline: none;
+    box-shadow: 3px 3px 6px black;
+    transition: .5s all;
+    cursor: pointer;
+}
+.portfolio-links a:hover {
+    background-color: #ff973b;
 }
 
 /****************************************************************************
@@ -426,8 +428,13 @@ body {
     border: none;
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s all
 }
 
+.contact-btn button:hover {
+    background-color: #ff973b;
+}
 
 /****************************************************************************
 
