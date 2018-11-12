@@ -237,56 +237,38 @@ body {
     align-items: center;
 }
 
-#slider {
+#slider,
+#slider2,
+#slider3 {
     width: 600px;
     height: 360px;
     overflow: hidden;
     box-shadow: 3px 3px 10px black;
 }
-#slider .slides {
+#slider .slides,
+#slider2 .slides2,
+#slider3 .slides3 {
     display: block;
     width: 6000px;
     height: 360px;
     margin: 0;
     padding: 0;
 }
-#slider .slide {
+#slider .slide,
+#slider2 .slide2,
+#slider3 .slide3 {
     float: left;
     list-style-type: none;
     width: 600px;
     height: 360px;
 }
 
-#slider .slide img {
+#slider .slide img,
+#slider2 .slide2 img,
+#slider3 .slide3 img {
     width: 600px;
     height: 360px;
 }
-#slider2 {
-    width: 600px;
-    height: 360px;
-    overflow: hidden;
-    box-shadow: 3px 3px 10px black;
-}
-#slider2 .slides2 {
-    display: block;
-    width: 6000px;
-    height: 360px;
-    margin: 0;
-    padding: 0;
-}
-#slider2 .slide2 {
-    float: left;
-    list-style-type: none;
-    width: 600px;
-    height: 360px;
-}
-
-#slider2 .slide2 img {
-    width: 600px;
-    height: 360px;
-}
-
-
 
 .portfolio-app {
     color: #e67e22;

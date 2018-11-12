@@ -162,4 +162,29 @@ $('.js--nav-icon').click(function() {
     $slider2.on('mouseenter', stopSlider2).on('mouseleave', startSlider2);
     startSlider2()
 
+    var $slider3 = $('#slider3');
+    var $slideContainer3 = $slider3.find('.slides3');
+    var $slides3 = $slideContainer3.find('.slide3');
+    var currentSlide3 = 1
+
+    var interval3;
+    function startSlider3 () {
+        interval3 = setInterval(function() {
+            $slideContainer3.animate({'margin-left': '-='+width}, animationSpedd, function() {
+                currentSlide3++;
+                if (currentSlide3 === $slides3.length) {
+                    currentSlide3 = 1;
+                    $slideContainer3.css('margin-left', 0);
+                }
+            })
+        }, pause)
+    };
+
+    function stopSlider3 () {
+        clearInterval(interval3);
+    }
+
+    $slider3.on('mouseenter', stopSlider3).on('mouseleave', startSlider3);
+    startSlider3()
+
 });
