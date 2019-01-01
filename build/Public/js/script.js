@@ -118,6 +118,22 @@ $(document).ready(function() {
       offset: '70%'
     }
   );
+  $('.js--wp-8').waypoint(
+    function(direction) {
+      $('.js--wp-8').addClass('animated fadeInUp');
+    },
+    {
+      offset: '70%'
+    }
+  );
+  $('.js--wp-9').waypoint(
+    function(direction) {
+      $('.js--wp-9').addClass('animated fadeInUp');
+    },
+    {
+      offset: '70%'
+    }
+  );
 
   setTimeout(function() {
     $('body').css('opacity', '1');
@@ -177,6 +193,8 @@ $(document).ready(function() {
   $slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
   startSlider();
 
+  ///////////////////////////////////////////////////////////
+
   var $slider2 = $('#slider2');
   var $slideContainer2 = $slider2.find('.slides2');
   var $slides2 = $slideContainer2.find('.slide2');
@@ -205,6 +223,8 @@ $(document).ready(function() {
 
   $slider2.on('mouseenter', stopSlider2).on('mouseleave', startSlider2);
   startSlider2();
+
+  ///////////////////////////////////////////////////////////
 
   var $slider3 = $('#slider3');
   var $slideContainer3 = $slider3.find('.slides3');
@@ -235,10 +255,10 @@ $(document).ready(function() {
   $slider3.on('mouseenter', stopSlider3).on('mouseleave', startSlider3);
   startSlider3();
 
-
+  ///////////////////////////////////////////////////////////
   var $slider4 = $('#slider4');
   var $slideContainer4 = $slider4.find('.slides4');
-  var $slides4 = $slideContainer3.find('.slide4');
+  var $slides4 = $slideContainer4.find('.slide4');
   var currentSlide4 = 1;
 
   var interval4;
@@ -264,4 +284,34 @@ $(document).ready(function() {
 
   $slider4.on('mouseenter', stopSlider4).on('mouseleave', startSlider4);
   startSlider4();
+
+  ///////////////////////////////////////////////////////////
+  var $slider5 = $('#slider5');
+  var $slideContainer5 = $slider5.find('.slides5');
+  var $slides5 = $slideContainer5.find('.slide5');
+  var currentSlide5 = 1;
+
+  var interval5;
+  function startSlider5() {
+    interval5 = setInterval(function() {
+      $slideContainer5.animate(
+        { 'margin-left': '-=' + width },
+        animationSpedd,
+        function() {
+          currentSlide5++;
+          if (currentSlide5 === $slides5.length) {
+            currentSlide5 = 1;
+            $slideContainer5.css('margin-left', 0);
+          }
+        }
+      );
+    }, pause);
+  }
+
+  function stopSlider5() {
+    clearInterval(interval5);
+  }
+
+  $slider5.on('mouseenter', stopSlider5).on('mouseleave', startSlider5);
+  startSlider5();
 });

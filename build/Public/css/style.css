@@ -241,7 +241,8 @@ body {
 #slider,
 #slider2,
 #slider3,
-#slider4 {
+#slider4,
+#slider5 {
   width: 600px;
   height: 360px;
   overflow: hidden;
@@ -250,7 +251,8 @@ body {
 #slider .slides,
 #slider2 .slides2,
 #slider3 .slides3,
-#slider4 .slides4 {
+#slider4 .slides4,
+#slider5 .slides5 {
   display: block;
   width: 6000px;
   height: 360px;
@@ -260,6 +262,7 @@ body {
 #slider .slide,
 #slider2 .slide2,
 #slider3 .slide3,
+#slider5 .slide5,
 #slider4 .slide4 {
   float: left;
   list-style-type: none;
@@ -270,6 +273,7 @@ body {
 #slider .slide img,
 #slider2 .slide2 img,
 #slider3 .slide3 img,
+#slider5 .slide5 img,
 #slider4 .slide4 img {
   width: 600px;
   height: 360px;
@@ -515,5 +519,19 @@ footer {
   opacity: 0;
 }
 .js--wp-7.animated {
+  opacity: 1;
+}
+
+.js--wp-8 {
+  opacity: 0;
+}
+.js--wp-8.animated {
+  opacity: 1;
+}
+
+.js--wp-9 {
+  opacity: 0;
+}
+.js--wp-9.animated {
   opacity: 1;
 }
