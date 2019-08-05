@@ -217,6 +217,7 @@ body {
   margin: auto;
   margin-bottom: 100px;
   display: flex;
+  justify-content: space-around;
   text-align: left;
   padding: 20px;
   box-shadow: 3px 3px 10px black;
@@ -226,6 +227,7 @@ body {
 }
 .portfolio-about {
   color: black;
+  width: 50%;
 }
 
 #links2 {

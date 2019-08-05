@@ -51,6 +51,9 @@
     text-align: center;
     justify-content: space-around;
   }
+  .portfolio-about {
+    width: 100%;
+  }
   .technology h6 {
     margin: 20px auto;
     text-align: center;
@@ -114,6 +117,9 @@
     text-align: center;
     justify-content: space-around;
   }
+  .portfolio-about {
+    width: 100%;
+  }
   .technology h6 {
     margin: 20px auto;
     text-align: center;
@@ -165,6 +171,9 @@
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
+  }
+  .portfolio-about {
+    width: 100%;
   }
   .technology h6 {
     margin: 20px auto;
